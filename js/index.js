@@ -9,7 +9,8 @@ document.addEventListener('keydown', e => {
 })
 
 document.addEventListener('select', e => {
-  console.log(e);
+  // let selected = e.target.value.substring(e.target.selectionStart, e.target.selectionEnd);
+  alert(e);
 })
 
 imgs.forEach(img => {
@@ -22,8 +23,20 @@ imgs.forEach(img => {
   })
 
   img.addEventListener('wheel', e => {
-    // debugger
-    // alert(`It took you ${e.timeStamp}ms to find this feature.`);
+    e.preventDefault();
     img.classList.toggle('fullRotate');
   })
+
+  img.addEventListener('dragend', e => {
+    alert(`Image dragged to ${e.x}x ${e.y}y`);
+  })
+
+  img.addEventListener('dblclick', e => {
+    window.open(e.target.src)
+  })
 })
+
+// 3 more to go!
+
+// double clicking text allows you to edit it
+// hitting enter saves it
