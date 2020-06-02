@@ -47,8 +47,8 @@ body.addEventListener('dblclick', e => {
   blue = !blue
   // if (blue) body.style.backgroundColor = 'skyblue';
   // else body.style.backgroundColor = 'white';
-  if (blue) gsap.to("body", {backgroundColor: 'skyblue'})
-  else gsap.to("body", {backgroundColor: 'white'})
+  if (blue) gsap.to("body", {duration: 2, backgroundColor: 'skyblue'})
+  else gsap.to("body", {duration: 2, backgroundColor: 'white'})
 })
 
 funBusImage.addEventListener('contextmenu', e => {
