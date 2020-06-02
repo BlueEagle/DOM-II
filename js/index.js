@@ -1,8 +1,11 @@
 // Your code goes here
 const funBusImage = document.querySelector('header img');
 const imgs = document.querySelectorAll('img');
+const body = document.querySelector('body');
 
-
+window.addEventListener('load', e => {
+  console.log('The page has loaded sucessfully!')
+})
 
 document.addEventListener('keydown', e => {
   alert('Stop pressing my buttons!');
@@ -32,11 +35,11 @@ imgs.forEach(img => {
   })
 
   img.addEventListener('dblclick', e => {
-    window.open(e.target.src)
+    open(e.target.src)
   })
 })
 
-// 3 more to go!
+// 2 more to go!
 
 // double clicking text allows you to edit it
 // hitting enter saves it
