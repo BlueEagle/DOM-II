@@ -177,9 +177,9 @@ img {
 .blueShadow {
   box-shadow: 0 0 25px skyblue;
 }
-.rotate {
+.fullRotate {
   transform: rotate(1turn);
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
 .main-navigation {
   width: 100%;
