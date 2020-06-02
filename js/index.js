@@ -1,7 +1,16 @@
 // Your code goes here
+
 const funBusImage = document.querySelector('header img');
 const imgs = document.querySelectorAll('img');
 const body = document.querySelector('body');
+const navItems = document.querySelectorAll('nav a');
+
+
+navItems.forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+  })
+})
 
 window.addEventListener('load', e => {
   console.log('The page has loaded sucessfully!')
